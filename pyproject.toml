@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "merkle-tree"
+version = "1.0.0"
+description = "SHA-256 Merkle tree with inclusion proofs and verification"
+requires-python = ">=3.10"
+
+[project.scripts]
+merkle = "merkle.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
